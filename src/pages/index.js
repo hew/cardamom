@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
-import Confirm from '../components/Confirm';
+import {Confirm, FullWidth} from '../components';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -9,6 +9,8 @@ export default class IndexPage extends React.Component {
     // const { edges: posts } = data.allMarkdownRemark
 
     return (
+      <React.Fragment>
+      <FullWidth height='85vh' bg="red"><H1>Hello</H1></FullWidth>
       <section>
         <Container>
           <H1>Welcome to Canna!</H1>
@@ -25,6 +27,7 @@ export default class IndexPage extends React.Component {
           </P>
         </Container>
       </section>
+      </React.Fragment>
     );
   }
 }

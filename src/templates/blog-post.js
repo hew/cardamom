@@ -19,7 +19,7 @@ export const BlogPostTemplate = ({
     <section>
       {helmet || ''}
       <Row>
-        <Box w={[1, 2 / 3]}>
+        <Box>
           <H1>{title}</H1>
           <P>{description}</P>
           <PostContent content={content} />

@@ -18,9 +18,9 @@ class Nav extends Component {
     };
 
     return (
-      <Flex>
+      <Box py={3} >
         <Container>
-          <Flex py={4} align="center">
+          <Flex align="center">
             <Box mt={2}>
               <Link to="/" style={buttonStyles}>
                  <H4>{'Home'}</H4>
@@ -65,7 +65,7 @@ class Nav extends Component {
             <NavModal items={items} open={isModalOpen} />
           </Flex>
         </Container>
-      </Flex>
+      </Box>
     );
   }
 }

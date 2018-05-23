@@ -14,58 +14,58 @@ export const ProductPageTemplate = ({
   pricing
 }) => (
   <section>
-      <FullWidth style={{backgroundImage: `url(${image})`}}>
-        <H2
-          style={{
-            boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
-            backgroundColor: '#f40',
-            color: 'white',
-            padding: '1rem'
-          }}>
-          {title}
-        </H2>
-      </FullWidth>
-          <H3>{heading}</H3>
-          <P>{description}</P>
-      <Features gridItems={intro.blurbs} />
-      <Box>
-        <H3>{main.heading}</H3>
-        <p>{main.description}</p>
+    <FullWidth style={{backgroundImage: `url(${image})`}}>
+      <H2
+        style={{
+          boxShadow: '0.5rem 0 0 #f40, -0.5rem 0 0 #f40',
+          backgroundColor: '#f40',
+          color: 'white',
+          padding: '1rem'
+        }}>
+        {title}
+      </H2>
+    </FullWidth>
+    <H3>{heading}</H3>
+    <P>{description}</P>
+    <Features gridItems={intro.blurbs} />
+    <Box>
+      <H3>{main.heading}</H3>
+      <p>{main.description}</p>
+    </Box>
+    <Row>
+      <Box width={[1, 1 / 2]}>
+        <article>
+          <img
+            style={{borderRadius: '5px'}}
+            src={main.image1.image}
+            alt={main.image1.alt}
+          />
+        </article>
       </Box>
-      <Row>
-        <Box width={[1, 1 / 2]}>
-          <article>
-            <img
-              style={{borderRadius: '5px'}}
-              src={main.image1.image}
-              alt={main.image1.alt}
-            />
-          </article>
-        </Box>
-        <Box width={[1, 1 / 2]}>
-          <article>
-            <img
-              style={{borderRadius: '5px'}}
-              src={main.image2.image}
-              alt={main.image2.alt}
-            />
-          </article>
-        </Box>
-        <Box width={[1, 1 / 2]}>
-          <article>
-            <img
-              style={{borderRadius: '5px'}}
-              src={main.image3.image}
-              alt={main.image3.alt}
-            />
-          </article>
-        </Box>
-      </Row>
-      <Testimonials testimonials={testimonials} />
-      <FullWidth style={{backgroundImage: `url(${fullImage})`}} />
-      <h2 className="has-text-weight-semibold is-size-2">{pricing.heading}</h2>
-      <p className="is-size-5">{pricing.description}</p>
-      <Pricing data={pricing.plans} />
+      <Box width={[1, 1 / 2]}>
+        <article>
+          <img
+            style={{borderRadius: '5px'}}
+            src={main.image2.image}
+            alt={main.image2.alt}
+          />
+        </article>
+      </Box>
+      <Box width={[1, 1 / 2]}>
+        <article>
+          <img
+            style={{borderRadius: '5px'}}
+            src={main.image3.image}
+            alt={main.image3.alt}
+          />
+        </article>
+      </Box>
+    </Row>
+    <Testimonials testimonials={testimonials} />
+    <FullWidth style={{backgroundImage: `url(${fullImage})`, marginTop: '1em', marginBottom: '1em'}} />
+    <h2 className="has-text-weight-semibold is-size-2">{pricing.heading}</h2>
+    <p className="is-size-5">{pricing.description}</p>
+    <Pricing data={pricing.plans} />
   </section>
 );
 

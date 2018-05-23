@@ -32,8 +32,6 @@ injectGlobal`
   }
   html, body, #___gatsby, #___gatsby > div {
     height: 100%;
-    display: flex;
-    flex-direction: column;
   }
   ul, li {
     margin: 0;

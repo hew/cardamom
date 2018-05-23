@@ -1,15 +1,15 @@
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
   return (
     <footer>
-      <Container>
-        <Flex>
-          <Box m='4em 0' is="p" ml='auto'>Made by <a href="https://github.com/hew">hew</a></Box>
-        </Flex>
-      </Container>
+      <Row py={5}>
+        <Flex width={[1, 1 / 3]}>{'links here'}</Flex>
+        <Flex width={[1, 1 / 3]}>{'links here'}</Flex>
+        <Flex width={[1, 1 / 3]}>{'links here'}</Flex>
+      </Row>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

@@ -17,7 +17,7 @@ export default class ReadPage extends React.Component {
           {posts
             .map(({ node: post }) => (
               <Box
-                style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
+                style={{ border: '1px solid #eaecee', padding: '2em 4em', margin: '1em 0' }}
                 key={post.id}
               >
                 <P color={color.yellow[0]}>
