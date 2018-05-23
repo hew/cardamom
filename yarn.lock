@@ -1015,7 +1015,7 @@ babel-polyfill@^6.20.0, babel-polyfill@^6.23.0, babel-polyfill@^6.26.0:
     core-js "^2.5.0"
     regenerator-runtime "^0.10.5"
 
-babel-preset-env@^1.6.0:
+babel-preset-env@^1.6.0, babel-preset-env@^1.6.1:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/babel-preset-env/-/babel-preset-env-1.7.0.tgz#dea79fa4ebeb883cd35dab07e260c1c9c04df77a"
   dependencies:
@@ -2295,6 +2295,13 @@ create-react-class@^15.5.1, create-react-class@^15.5.2, create-react-class@^15.6
 cross-env@^3.1.1:
   version "3.2.4"
   resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-3.2.4.tgz#9e0585f277864ed421ce756f81a980ff0d698aba"
+  dependencies:
+    cross-spawn "^5.1.0"
+    is-windows "^1.0.0"
+
+cross-env@^5.1.4:
+  version "5.1.6"
+  resolved "https://registry.yarnpkg.com/cross-env/-/cross-env-5.1.6.tgz#0dc05caf945b24e4b9e3b12871fe0e858d08b38d"
   dependencies:
     cross-spawn "^5.1.0"
     is-windows "^1.0.0"
@@ -3844,6 +3851,16 @@ gatsby-plugin-sharp@^1.6.34, gatsby-plugin-sharp@^1.6.44:
     progress "^1.1.8"
     sharp "^0.20.0"
     svgo "^0.7.2"
+
+gatsby-plugin-stripe-checkout@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-stripe-checkout/-/gatsby-plugin-stripe-checkout-1.0.4.tgz#92f09c305ff8cb8dd13db20e229e9e4b5c171c4f"
+  dependencies:
+    babel-cli "^6.26.0"
+    babel-preset-env "^1.6.1"
+    babel-preset-react "^6.24.1"
+    babel-runtime "^6.26.0"
+    cross-env "^5.1.4"
 
 gatsby-react-router-scroll@^1.0.17:
   version "1.0.17"
