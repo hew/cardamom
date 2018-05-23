@@ -16,7 +16,7 @@ export const ProductPageTemplate = ({
   pricing,
 }) => (
   <section className="section section--gradient">
-    <div className="container">
+    <Container>
       <div className="section">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -100,8 +100,8 @@ export const ProductPageTemplate = ({
             </div>
           </div>
         </div>
-      </div>
     </div>
+      </Container>
   </section>
 )
 
