@@ -18,7 +18,7 @@ class Nav extends Component {
     };
 
     return (
-      <Flex style={{position: 'relative', zIndex: 9}}>
+      <Flex>
         <Container>
           <Flex py={4} align="center">
             <Box mt={2}>

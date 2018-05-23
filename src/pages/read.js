@@ -9,36 +9,35 @@ export default class ReadPage extends React.Component {
     const { edges: posts } = data.allMarkdownRemark
 
     return (
-      <section className="section">
-        <div className="container">
-          <div className="content">
-            <h1 className="has-text-weight-bold is-size-2">Latest From the Blog</h1>
-          </div>
+      <section>
+        <Container>
+          <Box>
+            <H1>Latest From the Blog</H1>
+          </Box>
           {posts
             .map(({ node: post }) => (
-              <div
-                className="content"
+              <Box
                 style={{ border: '1px solid #eaecee', padding: '2em 4em' }}
                 key={post.id}
               >
-                <p>
-                  <Link className="has-text-primary" to={post.fields.slug}>
+                <P color={color.yellow[0]}>
+                  <Link to={post.fields.slug}>
                     {post.frontmatter.title}
                   </Link>
                   <span> &bull; </span>
                   <small>{post.frontmatter.date}</small>
-                </p>
-                <p>
+                </P>
+                <P>
                   {post.excerpt}
                   <br />
                   <br />
                   <Link className="button is-small" to={post.fields.slug}>
                     Keep Reading →
                   </Link>
-                </p>
-              </div>
+                </P>
+              </Box>
             ))}
-        </div>
+        </Container>
       </section>
     )
   }

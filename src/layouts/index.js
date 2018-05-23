@@ -3,14 +3,14 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Nav from '../components/Nav'
-import './all.sass'
+// import './all.sass'
 import '../styles'
 
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet title="Home | Gatsby + Netlify CMS" />
     <Nav />
-    <div>{children()}</div>
+    <Flex><Container>{children()}</Container></Flex>
   </div>
 )
 

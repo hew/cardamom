@@ -14,7 +14,6 @@ export const ProductPageTemplate = ({
   pricing
 }) => (
   <section>
-    <Container>
       <FullWidth style={{backgroundImage: `url(${image})`}}>
         <H2
           style={{
@@ -67,7 +66,6 @@ export const ProductPageTemplate = ({
       <h2 className="has-text-weight-semibold is-size-2">{pricing.heading}</h2>
       <p className="is-size-5">{pricing.description}</p>
       <Pricing data={pricing.plans} />
-    </Container>
   </section>
 );
 
