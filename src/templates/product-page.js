@@ -30,7 +30,7 @@ export const ProductPageTemplate = ({
           <P>{description}</P>
       <Features gridItems={intro.blurbs} />
       <Box>
-        <h3 className="has-text-weight-semibold is-size-3">{main.heading}</h3>
+        <H3>{main.heading}</H3>
         <p>{main.description}</p>
       </Box>
       <Row>
