@@ -8,7 +8,7 @@ export const toggleConfirm = () => ({
 
 // Set InitialState
 export const initialModalState = {
-  show: false
+  show: true
 };
 
 // Reducer

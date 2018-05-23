@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Modal from 'react-modal';
 import Link from 'gatsby-link';
+import Button from '../components/Button';
 
 // Wire up Redux
 import {connect} from 'react-redux';
@@ -41,12 +42,24 @@ class Confirm extends React.Component {
     console.log('yehaa');
   }
 
+  handleClose = (evt) => {
+    evt.preventDefault();
+    this.props.toggleConfirm();
+  }
+
   render() {
     const {toggleConfirm, isModalOpen} = this.props;
 
     return (
       <Modal isOpen={isModalOpen} contentLabel="Modal" style={modalStyles}>
-        <p>hey</p>
+        <p>Are you the appropriate age to view this website?</p>
+        <div
+          style={{display: 'flex', flexDirection: 'column', marginTop: '2em'}}>
+          <div style={{marginBottom: '1em'}}>
+            <Button onClick={this.handleClose}>Yes</Button>
+          </div>
+          <Button onClick={this.handleClose}>No</Button>
+        </div>
       </Modal>
     );
   }
@@ -55,6 +68,6 @@ class Confirm extends React.Component {
 export default connect(
   (store) => ({isModalOpen: store.confirm.show}),
   (dispatch) => ({
-    toggleConfirm: (i) => dispatch(toggleModal(i))
+    toggleConfirm: (i) => dispatch(toggleConfirm(i))
   })
 )(Confirm);

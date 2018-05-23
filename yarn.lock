@@ -8248,6 +8248,13 @@ react-autowhatever@^10.1.0:
     react-themeable "^1.1.0"
     section-iterator "^2.0.0"
 
+react-awesome-button@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/react-awesome-button/-/react-awesome-button-4.2.0.tgz#5822cded737481c985cd639d28a9e68b62d43b9c"
+  dependencies:
+    prop-types "^15.6.0"
+    react "^16.2.0"
+
 react-datetime@^2.11.0:
   version "2.14.0"
   resolved "https://registry.yarnpkg.com/react-datetime/-/react-datetime-2.14.0.tgz#c7859c5b765275d7980f1cca27c03a727ff9ccef"
